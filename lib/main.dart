@@ -57,7 +57,7 @@ class MyAppState extends State<MyApp> {
                       child: weatherData != null ? Weather(weather: weatherData) : Container(),
                     ),
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(8.1),
                       child: isLoading ? CircularProgressIndicator(
                         strokeWidth: 2.0,
                         valueColor: new AlwaysStoppedAnimation(Colors.white),
