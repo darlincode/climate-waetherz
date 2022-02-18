@@ -35,7 +35,7 @@ class MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Weatherzz',
+      title: 'Weatherz',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -63,7 +63,8 @@ class MyAppState extends State<MyApp> {
                         valueColor: new AlwaysStoppedAnimation(Colors.white),
                       ) : IconButton(
                         icon: new Icon(Icons.refresh),
-                        tooltip: 'Refresh',
+                        
+                         tooltip: 'Refresh',
                         onPressed: loadWeather,
                         color: Colors.white,
                       ),
@@ -117,7 +118,7 @@ class MyAppState extends State<MyApp> {
       final lon = location['longitude'];
 
       final weatherResponse = await http.get(
-          'https://api.openweathermap.org/data/2.5/weather?APPID=0721392c0ba0af8c410aa9394defa29e&lat=${lat
+          'https://api.openweathermap.org/data/2.5/weather?APPID=d4d0319160a27214410795759d18c217&lat=${lat
               .toString()}&lon=${lon.toString()}');
       final forecastResponse = await http.get(
           'https://api.openweathermap.org/data/2.5/forecast?APPID=0721392c0ba0af8c410aa9394defa29e&lat=${lat

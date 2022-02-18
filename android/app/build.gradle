@@ -18,9 +18,9 @@ android {
     compileSdkVersion 27
 
     lintOptions {
-        disable 'InvalidPackage'
-    }
-   aaptOptions {cruncherEnabled = false}
+            checkReleaseBuilds false
+            disable 'InvalidPackage'
+    }   aaptOptions {cruncherEnabled = false}
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.dragosholban.flutterweather"
